@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Classification Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1f1d47;
+            /* Background color */
+            color: #db341e;
+            /* Text color */
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #db341e;
+            /* Heading color */
+            margin-bottom: 20px;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        strong {
+            font-weight: bold;
+        }
+        
+        .food-image {
+            margin-top: 20px;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Image Classification Result</h1>
+        <p><strong>Predicted food:</strong> {{ predicted_food }}</p>
+        <p>{{ food_info }}</p>
+        <p><strong>Calories:</strong> {{ calories }}</p>
+        <img class="food-image" src="{{ url_for('static', filename=color_image) }}" alt="Color-converted image">
+    </div>
+</body>
+
+</html>

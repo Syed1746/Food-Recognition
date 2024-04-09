@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>zon</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://webchat-styler-css.botpress.app/prod/c21d7c0e-1905-4da5-9088-354365b19650/v32445/style.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="../static/images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="../static/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="../static/images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row d_flex">
+                <div class="col-xl-1 col-lg-3 col-sm-2 col logo_section">
+                    <div class="full">
+                        <div class="center-desk">
+                            <div class="logo">
+                                <a href="../templates/index.html">Zon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-9 col-md-10 col-sm-12">
+                    <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url_for('service') }}">Uploads</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url_for('service2') }}">Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url_for('testimonial') }}">Testimonial</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url_for('blog') }}">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="background: transparent" href="Javascript:void(0)">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-4 re_no">
+                    <ul class="infomaco">
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> 7010214612</li>
+                        <li><a href="Javascript:void(0)"><i class="fa fa-envelope-o" aria-hidden="true"></i> foodvisionary@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header inner -->
+    <!-- end header -->
+    <!-- top -->
+    <div class="full_bg">
+        <div class="slider_main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- carousel code -->
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <!-- first slide -->
+                                <div class="carousel-item active">
+                                    <div class="carousel-caption relative">
+                                        <div class="row d_flex">
+                                            <div class="col-md-5">
+                                                <div class="zon_text">
+                                                    <h1 data-animation="animated bounceInLeft">
+                                                        Zon<br>
+                                                    </h1>
+                                                    <p data-animation="animated bounceInLeft">
+                                                        We offer automated food recognition using deep learning methods like SqueezeNet and VGG-16 CNNs for health applications. Our approach involves data augmentation and hyperparameter tuning, ensuring accurate results and efficient processing.
+                                                    </p>
+                                                    <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Read More</button>
+                                                    <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Get A Quote</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="coff_img">
+                                                    <figure><img src="../static/images/coff_img.png" alt="#" /></figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- second slide -->
+                                <div class="carousel-item">
+                                    <div class="carousel-caption relative">
+                                        <div class="row d_flex">
+                                            <div class="col-md-5">
+                                                <div class="zon_text">
+                                                    <h1 data-animation="animated bounceInLeft">
+                                                        Zon<br>
+                                                    </h1>
+                                                    <p data-animation="animated bounceInLeft">
+                                                        There are many variations of passages of Loremalteration in some form, by injected humour, or randomised
+                                                    </p>
+                                                    <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Read More</button>
+                                                    <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Get A Quote</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="coff_img">
+                                                    <figure><img src="../static/images/coff_img.png" alt="#" /></figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- third slide-->
+                                <div class="carousel-item">
+                                    <div class="carousel-caption relative">
+                                        <div class="row d_flex">
+                                            <div class="col-md-5">
+                                                <div class="zon_text">
+                                                    <h1 data-animation="animated bounceInLeft">
+                                                        Zon<br>
+                                                    </h1>
+                                                    <p data-animation="animated bounceInLeft">
+                                                        There are many variations of passages of Loremalteration in some form, by injected humour, or randomised
+                                                    </p>
+                                                    <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Read More</button>
+                                                    <button class="btn btn-primary  read_more bounceInLeft" data-animation="animated bounceInLeft">Get A Quote</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="coff_img">
+                                                    <figure><img src="../static/images/coff_img.png" alt="#" /></figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- controls -->
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end banner -->
+    <!-- about -->
+    <div class="about">
+        <div class="container">
+            <div class="row d_flex grid">
+                <div class="col-md-6">
+                    <div class="about_img text_align_center">
+                        <figure><img src="../static/images/about.png" alt="#" /></figure>
+                    </div>
+                </div>
+                <div class="col-md-6 order1">
+                    <div class="titlepage text_align_left">
+                        <h2>About Zon </h2>
+                        <p>At FoodVisions, our passion lies in revolutionizing the way we perceive and interact with food. Through cutting-edge technology and a deep understanding of culinary artistry, we're dedicated to bringing seamless and accurate food
+                            recognition solutions to the forefront of modern-day dining experiences. Join us as we embark on a journey to redefine how we appreciate and understand the world of food.
+                        </p>
+                        <a class="read_more" href="../templates/about.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+    <!-- service -->
+    <div class="service">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage text_align_center">
+                        <h2>Services</h2>
+                        <p>Revolutionizing food recognition: Fast, accurate, automated
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--  Demos -->
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="service_box text_align_center">
+                                <div class="ser_img">
+                                    <figure><img src="../static/images/burger.png.png" alt="#" /></figure>
+                                </div>
+                                <h3>Burger</h3>
+                                <p>Irresistible burger visuals: Mouthwatering!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="service_box text_align_center">
+                                <div class="ser_img">
+                                    <figure><img src="../static/images/vegetable.png.png" alt="#" /></figure>
+                                </div>
+                                <h3>Vegetable</h3>
+                                <p>Vibrant, fresh veggie visuals
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="service_box text_align_center">
+                                <div class="ser_img">
+                                    <figure><img src="../static/images/pizza.png" alt="#" /></figure>
+                                </div>
+                                <h3>Pizza</h3>
+                                <p>Spice up with pizza!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <a class="read_more" href="../static/service.html">Book Now Table</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end service -->
+    <!-- section blue_bg -->
+    <div class="section blue_bg">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- contact -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="contact">
+                        <div class="row ">
+                            <div class="col-md-12">
+                                <div class="titlepage text_align_center">
+                                    <h2>Get In Touch</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <form id="request" class="main_form">
+                                    <div class="row">
+                                        <div class="col-md-12 ">
+                                            <input class="contactus" placeholder="Your name" type="type" name=" Name">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input class="contactus" placeholder="Email" type="type" name="Email">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea class="textarea" placeholder="Message" type="type" Message="Name"></textarea>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button class="send_btn">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- contact -->
+                <!-- testimonial section -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="testimonial">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="titlepage text_align_left">
+                                    <h2>Testimonial</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="container">
+                                                <div class="carousel-caption ">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="testimonial_box text_align_left">
+                                                                <p>uffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour,
+                                                                    or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                                                                    believable. If you are going to</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="testimonial_pro">
+                                                                <figure><img src="../static/images/test_pro.jpg" alt="#" /></figure>
+                                                                <h3>Mark Jonson <br><span class="cust">Customre</span></h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="container">
+                                                <div class="carousel-caption">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="testimonial_box text_align_left">
+                                                                <p>uffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour,
+                                                                    or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                                                                    believable. If you are going to</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="testimonial_pro">
+                                                                <figure><img src="../static/images/test_pro.jpg" alt="#" /></figure>
+                                                                <h3>Mark Jonson <br><span class="cust">Customre</span></h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="container">
+                                                <div class="carousel-caption">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="testimonial_box text_align_left">
+                                                                <p>uffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour,
+                                                                    or randomised words which don't look even slightly believable. If you are going touffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                                                                    believable. If you are going to</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="testimonial_pro">
+                                                                <figure><img src="../static/images/test_pro.jpg" alt="#" /></figure>
+                                                                <h3>Mark Jonson <br><span class="cust">Customre</span></h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="coff">
+                                    <figure><img src="../static/images/coff.png" alt="#" /></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end testimonial section -->
+            </div>
+        </div>
+    </div>
+    <!-- end section blue_bg -->
+    <!--  footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="logo_bottom" href="../templates/index.html">Zon</a>
+                    </div>
+                    <div class="col-md-12">
+                        <form class="form_subscri">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input class="subsrib" placeholder="Enter your email" type="text" name="Enter your email">
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="subsci_btn">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="infoma text_align_left">
+                                    <h3>Menu</h3>
+                                    <ul class="menu_bottom">
+                                        <li><a href="../templates/index.html">Home</a></li>
+                                        <li><a href="../templates/about.html">About </a></li>
+                                        <li><a href="../templates/serviec.html"> Serviec</a></li>
+                                        <li><a href="../templates/testimonial.html">Testimonial</a></li>
+                                        <li><a href="../templates/blog.html">Blog</a></li>
+                                        <li><a href="../templates/contact.html">Contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="infoma text_align_left">
+                                    <h3></h3>
+                                    <ul class="menu_bottom">
+                                        <li><a href="Javascript:void(0)">Black </a></li>
+                                        <li><a href="Javascript:void(0)">Read  </a></li>
+                                        <li><a href="Javascript:void(0)"> Serviec</a></li>
+                                        <li><a href="Javascript:void(0)">Green Tea</a></li>
+                                        <li><a href="Javascript:void(0)">Choclate </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="infoma">
+                            <h3>Follow Us</h3>
+                            <ul class="social_icon">
+                                <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="Javascript:void(0)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="Javascript:void(0)"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <ul class="conta">
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Locations
+                                </li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i>Call +01 1234567890</li>
+                                <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="Javascript:void(0)"> demo@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>© 2020 All Rights Reserved. <a href="https://html.design/"> Free html Templates</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="../static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/custom.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/fed83b9d-7486-4344-ba96-8b4c2145173a/webchat/config.js" defer></script>
+</body>
+
+</html>
